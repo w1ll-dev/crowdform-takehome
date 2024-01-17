@@ -14,6 +14,8 @@
       "@styles*": ["src/styles*"],
       "@providers": ["src/components/providers"],
       "@providers*": ["src/components/providers*"],
+      "@atoms": ["src/components/atoms"],
+      "@atoms*": ["src/components/atoms*"],
     },
   },
 }

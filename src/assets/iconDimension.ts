@@ -3,7 +3,7 @@ import { IconName } from "./iconName";
 type MediaDimensions = { width: number; height: number };
 
 const IconDimensions: Record<IconName, MediaDimensions> = {
-  lock: {
+  "lock-circle": {
     width: 50,
     height: 73,
   },

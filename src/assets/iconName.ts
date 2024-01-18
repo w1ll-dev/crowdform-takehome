@@ -1,5 +1,5 @@
 const Icons = {
-  lock: require("./files/lock.png"),
+  "lock-circle": require("./images/files/lock-circle.png"),
 };
 
 type IconName = keyof typeof Icons;

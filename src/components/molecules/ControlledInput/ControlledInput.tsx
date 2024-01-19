@@ -12,6 +12,7 @@ interface ControlledInputProps
   extends Omit<UseControllerProps, "defaultValue">,
     TextInputProps {
   rightIcon?: React.ReactNode;
+  label: string;
   placeholder: string;
   errorMessage: string;
 }
@@ -22,6 +23,7 @@ const ControlledInput = ({
   name,
   rules,
   rightIcon,
+  label,
   ...inputProps
 }: ControlledInputProps) => {
   const { field } = useController({ name, rules });
@@ -33,7 +35,7 @@ const ControlledInput = ({
   }
 
   return (
-    <InputFeedback placeholder={placeholder} errorMessage={errorMessage}>
+    <InputFeedback label={label} errorMessage={errorMessage}>
       <InputRow borderColor={errorMessage ? "$errorRed" : "$disabled"}>
         <StyledTextInput
           {...inputProps}

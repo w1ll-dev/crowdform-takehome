@@ -5,13 +5,13 @@ import { YStack } from "tamagui";
 
 type InputFeedbackProps = {
   errorMessage?: string;
-  placeholder: string;
+  label: string;
   children: ReactNode;
 };
 
 const InputFeedback = ({
   errorMessage,
-  placeholder,
+  label,
   children,
 }: InputFeedbackProps) => {
   const inputColor = useMemo(
@@ -21,7 +21,7 @@ const InputFeedback = ({
 
   return (
     <YStack height="$10">
-      <Caption1 color={inputColor}>{placeholder}</Caption1>
+      <Caption1 color={inputColor}>{label}</Caption1>
       {children}
       <ComponentVisibility isVisible={!!errorMessage}>
         <Caption2 color={"$errorRed"}>{errorMessage}</Caption2>

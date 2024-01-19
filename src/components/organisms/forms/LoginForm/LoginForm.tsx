@@ -10,6 +10,7 @@ import { textValidations, texts, yupLoginSchema } from "./textsAndValidations";
 import { Image } from "@molecules/Image";
 import { useState } from "react";
 import { useUserContext } from "@providers/UserContext";
+import { loginTestIDs } from "@constants/testIds";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -49,6 +50,7 @@ const LoginForm = () => {
             name="email"
             placeholder={textValidations.placeholders.email}
             errorMessage={errors.email?.message}
+            testID={loginTestIDs.emailField}
           />
           <ControlledInput
             label={textValidations.labels.password}
@@ -56,6 +58,7 @@ const LoginForm = () => {
             placeholder={textValidations.placeholders.password}
             errorMessage={errors.password?.message}
             secureTextEntry={!showPassword}
+            testID={loginTestIDs.passwordField}
             rightIcon={
               <Image
                 touchProps={{
@@ -71,7 +74,10 @@ const LoginForm = () => {
         </Caption2>
       </YStack>
       <YStack>
-        <Button disabled={!isValid} onPress={methods.handleSubmit(onSubmit)}>
+        <Button
+          disabled={!isValid}
+          testID={loginTestIDs.loginButton}
+          onPress={methods.handleSubmit(onSubmit)}>
           {texts.login}
         </Button>
         <Square height={"$padding.large"} />

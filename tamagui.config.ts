@@ -9,6 +9,27 @@ const tokens = createTokens({
   zIndex,
   color,
   radius,
+  button: {
+    primary: 48,
+  },
+  borderRadius: {
+    medium: 15,
+    large: 30,
+  },
+  padding: {
+    xxs: 2,
+    xs: 4,
+    small: 8,
+    "small-plus": 12,
+    medium: 16,
+    "medium-plus": 24,
+    large: 32,
+    xl: 48,
+  },
+  margin: {
+    small: 8,
+    xl: 40,
+  },
 });
 
 const config = createTamagui({

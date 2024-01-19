@@ -21248,7 +21248,7 @@
         "size": {
           "1": 12,
           "2": 14,
-          "3": 16
+          "button.primary": 16
         }
       },
       "poppins600": {
@@ -23360,6 +23360,105 @@
           "val": 9,
           "variable": ""
         }
+      },
+      "button": {
+        "primary": {
+          "isVar": true,
+          "key": "$primary",
+          "name": "button-1",
+          "val": 48,
+          "variable": ""
+        }
+      },
+      "borderRadius": {
+        "medium": {
+          "isVar": true,
+          "key": "$medium",
+          "name": "1349188574-1",
+          "val": 15,
+          "variable": ""
+        },
+        "large": {
+          "isVar": true,
+          "key": "$large",
+          "name": "1349188574-2",
+          "val": 30,
+          "variable": ""
+        }
+      },
+      "padding": {
+        "xxs": {
+          "isVar": true,
+          "key": "$xxs",
+          "name": "padding-1",
+          "val": 2,
+          "variable": ""
+        },
+        "xs": {
+          "isVar": true,
+          "key": "$xs",
+          "name": "padding-2",
+          "val": 4,
+          "variable": ""
+        },
+        "small": {
+          "isVar": true,
+          "key": "$small",
+          "name": "padding-3",
+          "val": 8,
+          "variable": ""
+        },
+        "small-plus": {
+          "isVar": true,
+          "key": "$small-plus",
+          "name": "padding-4",
+          "val": 12,
+          "variable": ""
+        },
+        "medium": {
+          "isVar": true,
+          "key": "$medium",
+          "name": "padding-5",
+          "val": 16,
+          "variable": ""
+        },
+        "medium-plus": {
+          "isVar": true,
+          "key": "$medium-plus",
+          "name": "padding-6",
+          "val": 24,
+          "variable": ""
+        },
+        "large": {
+          "isVar": true,
+          "key": "$large",
+          "name": "padding-7",
+          "val": 32,
+          "variable": ""
+        },
+        "xl": {
+          "isVar": true,
+          "key": "$xl",
+          "name": "padding-8",
+          "val": 48,
+          "variable": ""
+        }
+      },
+      "margin": {
+        "small": {
+          "isVar": true,
+          "key": "$small",
+          "name": "margin-1",
+          "val": 8,
+          "variable": ""
+        },
+        "xl": {
+          "isVar": true,
+          "key": "$xl",
+          "name": "margin-2",
+          "val": 40,
+          "variable": ""
+        }
       }
     },
     "_fonts": {
@@ -23374,7 +23473,7 @@
         "size": {
           "1": 12,
           "2": 14,
-          "3": 16
+          "button.primary": 16
         }
       },
       "poppins600": {
@@ -23391,8 +23490,11 @@
         "primary1": "#3629B7",
         "primary4": "#F2F1F9",
         "neutral1": "#343434",
+        "neutral4": "#CACACA",
         "white": "#FFFFFF",
         "textDefault": "#979797",
+        "errorRed": "#FF4C4C",
+        "disabled": "#CBCBCB",
         "id": "light"
       }
     },
@@ -25491,6 +25593,97 @@
         "key": "$true",
         "name": "radius-14",
         "val": 9,
+        "variable": ""
+      },
+      "$button.primary": {
+        "isVar": true,
+        "key": "$primary",
+        "name": "button-1",
+        "val": 48,
+        "variable": ""
+      },
+      "$borderRadius.medium": {
+        "isVar": true,
+        "key": "$medium",
+        "name": "1349188574-1",
+        "val": 15,
+        "variable": ""
+      },
+      "$borderRadius.large": {
+        "isVar": true,
+        "key": "$large",
+        "name": "1349188574-2",
+        "val": 30,
+        "variable": ""
+      },
+      "$padding.xxs": {
+        "isVar": true,
+        "key": "$xxs",
+        "name": "padding-1",
+        "val": 2,
+        "variable": ""
+      },
+      "$padding.xs": {
+        "isVar": true,
+        "key": "$xs",
+        "name": "padding-2",
+        "val": 4,
+        "variable": ""
+      },
+      "$padding.small": {
+        "isVar": true,
+        "key": "$small",
+        "name": "padding-3",
+        "val": 8,
+        "variable": ""
+      },
+      "$padding.small-plus": {
+        "isVar": true,
+        "key": "$small-plus",
+        "name": "padding-4",
+        "val": 12,
+        "variable": ""
+      },
+      "$padding.medium": {
+        "isVar": true,
+        "key": "$medium",
+        "name": "padding-5",
+        "val": 16,
+        "variable": ""
+      },
+      "$padding.medium-plus": {
+        "isVar": true,
+        "key": "$medium-plus",
+        "name": "padding-6",
+        "val": 24,
+        "variable": ""
+      },
+      "$padding.large": {
+        "isVar": true,
+        "key": "$large",
+        "name": "padding-7",
+        "val": 32,
+        "variable": ""
+      },
+      "$padding.xl": {
+        "isVar": true,
+        "key": "$xl",
+        "name": "padding-8",
+        "val": 48,
+        "variable": ""
+      },
+      "$margin.small": {
+        "isVar": true,
+        "key": "$small",
+        "name": "margin-1",
+        "val": 8,
+        "variable": ""
+      },
+      "$margin.xl": {
+        "isVar": true,
+        "key": "$xl",
+        "name": "margin-2",
+        "val": 40,
         "variable": ""
       }
     }

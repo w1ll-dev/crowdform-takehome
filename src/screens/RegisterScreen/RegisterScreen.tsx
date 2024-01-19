@@ -1,7 +1,8 @@
 import { ScreenContainer } from "@atoms/ScreenContainer";
 import { Caption2, Title } from "@atoms/Typography";
-import { YStack } from "tamagui";
+import { Square, YStack } from "tamagui";
 import { texts } from "./texts";
+import { RegisterForm } from "@organisms/forms/RegisterForm";
 
 const RegisterScreen = () => {
   return (
@@ -22,6 +23,8 @@ const RegisterScreen = () => {
             {texts.addYourPersonalDetailsBelow}
           </Caption2>
         </YStack>
+        <Square height={"$padding.large"} />
+        <RegisterForm />
       </YStack>
     </ScreenContainer>
   );

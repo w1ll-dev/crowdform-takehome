@@ -33,3 +33,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Jest
+#
+.jest/
+Pixel*.log
+artifacts/
+coverage/

@@ -8,6 +8,7 @@ module.exports = function (api) {
         {
           root: ["."],
           alias: {
+            jest: "./jest",
             "@assets": "./src/assets",
             "@hooks": "./src/hooks",
             "@styles": "./src/styles",
@@ -19,6 +20,7 @@ module.exports = function (api) {
             "@navigation": "./src/navigation",
             "@types": "./src/types",
             "@repository": "./src/repository",
+            "@constants": "./src/constants",
           },
         },
       ],

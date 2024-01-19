@@ -10,6 +10,7 @@ const tokens = createTokens({
   color,
   radius,
   button: {
+    checkbox: 24,
     primary: 48,
   },
   borderRadius: {

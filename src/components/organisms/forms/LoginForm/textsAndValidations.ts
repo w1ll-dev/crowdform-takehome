@@ -4,7 +4,7 @@ import { MIN_PASSWORD_CHAR } from "../constants";
 const texts = {
   login: "Login",
   invalidCredentials: "😔 Invalid credentials",
-  pleaseTryAgain: "Please try again.",
+  pleaseTryAgain: "Please, try again.",
   forgotYourPassword: "Forgot your password ?",
   dontHaveAnAccount: "Don't have an account?",
   signUp: "Sign Up",
@@ -15,8 +15,8 @@ const textValidations: Record<
   Record<keyof LoginFieldValues, string>
 > = {
   errors: {
-    email: "Please provide a valid email address.",
-    password: `Please provide a password of at least ${MIN_PASSWORD_CHAR} characters.`,
+    email: "Please, provide a valid email address.",
+    password: `Please, provide a password of at least ${MIN_PASSWORD_CHAR} characters.`,
   },
   labels: {
     email: "Email",

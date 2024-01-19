@@ -1,3 +1,3 @@
-const MIN_PASSWORD_CHAR = 4;
+const MIN_PASSWORD_CHAR = 8;
 
 export { MIN_PASSWORD_CHAR };

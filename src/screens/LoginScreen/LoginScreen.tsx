@@ -1,6 +1,7 @@
 import { ScreenContainer } from "@atoms/ScreenContainer";
 import { Caption2, Title } from "@atoms/Typography";
 import { Image } from "@molecules/Image";
+import { LoginForm } from "@organisms/forms";
 import { Stack, YStack } from "tamagui";
 import { texts } from "./texts";
 
@@ -9,13 +10,14 @@ const LoginScreen = () => {
     <ScreenContainer
       background="$primary1"
       footerBackground="$white"
+      marginTop="$padding.medium-plus"
       statusBarStyle="light">
       <YStack
         backgroundColor={"$white"}
         flex={1}
-        borderTopRightRadius={30}
-        borderTopLeftRadius={30}
-        padding={24}>
+        borderTopRightRadius={"$borderRadius.large"}
+        borderTopLeftRadius={"$borderRadius.large"}
+        padding={"$padding.medium-plus"}>
         <YStack>
           <Title color={"$primary1"}>{texts.welcomeBack}</Title>
           <Caption2 color={"$neutral1"}>{texts.logInToContinue}</Caption2>
@@ -23,6 +25,7 @@ const LoginScreen = () => {
         <Stack alignItems="center" marginTop={47}>
           <Image image="lock-circle" />
         </Stack>
+        <LoginForm />
       </YStack>
     </ScreenContainer>
   );

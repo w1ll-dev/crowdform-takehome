@@ -2805,7 +2805,7 @@
     "@tamagui/stacks" "1.86.6"
     "@tamagui/web" "1.86.6"
 
-"@tamagui/checkbox@1.86.6":
+"@tamagui/checkbox@1.86.6", "@tamagui/checkbox@^1.86.6":
   version "1.86.6"
   resolved "https://registry.yarnpkg.com/@tamagui/checkbox/-/checkbox-1.86.6.tgz#001f7c431035515ff85e47a2c279cfe0dce022b0"
   integrity sha512-XOhl0yy4l0imV9IX2ViRxFPanRfDmlRCPdT+ytKjhDDiOFjEtrOwHca96KI+LhECxWWPwRi3UVqKGbFRJLMyZA==

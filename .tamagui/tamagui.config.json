@@ -23362,10 +23362,17 @@
         }
       },
       "button": {
+        "checkbox": {
+          "isVar": true,
+          "key": "$checkbox",
+          "name": "button-1",
+          "val": 24,
+          "variable": ""
+        },
         "primary": {
           "isVar": true,
           "key": "$primary",
-          "name": "button-1",
+          "name": "button-2",
           "val": 48,
           "variable": ""
         }
@@ -25595,10 +25602,17 @@
         "val": 9,
         "variable": ""
       },
+      "$button.checkbox": {
+        "isVar": true,
+        "key": "$checkbox",
+        "name": "button-1",
+        "val": 24,
+        "variable": ""
+      },
       "$button.primary": {
         "isVar": true,
         "key": "$primary",
-        "name": "button-1",
+        "name": "button-2",
         "val": 48,
         "variable": ""
       },

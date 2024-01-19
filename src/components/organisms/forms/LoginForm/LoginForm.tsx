@@ -9,9 +9,13 @@ import { Square, YStack } from "tamagui";
 import { textValidations, texts, yupLoginSchema } from "./textsAndValidations";
 import { Image } from "@molecules/Image";
 import { useState } from "react";
+import { useUserContext } from "@providers/UserContext";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const { user } = useUserContext();
+
   const { navigate } = useNavigationForRootStack();
 
   const toggleShowPassword = () =>
@@ -25,20 +29,29 @@ const LoginForm = () => {
   const { errors, isValid } = methods.formState;
 
   const onSubmit = async (formData: LoginFieldValues) => {
-    Alert.alert(texts.invalidCredentials, texts.pleaseTryAgain);
-    console.log("🚀 ~ onSubmit ~ formData:", formData);
+    if (
+      user?.email !== formData.email ||
+      user?.password !== formData.password
+    ) {
+      Alert.alert(texts.invalidCredentials, texts.pleaseTryAgain);
+      return;
+    }
+
+    navigate("Home");
   };
 
   return (
-    <YStack marginTop="$margin.xl" flex={1} justifyContent="space-between">
+    <YStack flex={1} justifyContent="space-between">
       <YStack>
         <FormProvider {...methods}>
           <ControlledInput
+            label={textValidations.labels.email}
             name="email"
             placeholder={textValidations.placeholders.email}
             errorMessage={errors.email?.message}
           />
           <ControlledInput
+            label={textValidations.labels.password}
             name="password"
             placeholder={textValidations.placeholders.password}
             errorMessage={errors.password?.message}

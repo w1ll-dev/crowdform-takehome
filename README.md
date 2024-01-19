@@ -1,41 +1,75 @@
-Article type: Project
-Renewable Energy Fund App
-Project instructions
+# Take Home App
 
-Create a React Native App, which needs to work on Android and IOS, using Redux or any other state manager and following this layout and make it pixel perfect just like you see in the Figma design. All data and information can be mocked. No Backend or Database required.
+## Demo
 
-Sign up
+🎥 [You can see an example video of its use here, remember to put the video in high resolution 😉.](https://youtu.be/lH-2Ff8y8xc)
 
-Sign up form, show success screen when registering, need to agree with terms and conditions to enable submission button and no need to link terms and conditions to any screen
-After registration, show success screen and return to login, registration should save user data in state manager to check against authentication in Login page
+## Description
 
-Login
+<p align="center">🔐 📱 App to test app creation skills with login and registration screens.</p>
 
-Login form, redirecting to the home screen after successful authentication check
+<h4 align="center"> 
+	🚧  Take Home App 🚀 Building...  🚧
+</h4>
 
-Dashboard
+### 📱 Running the app (Expo)
 
-Needs to be pixel perfect to Figma design
-Chart should be plotted with mocked data and similar to what you see in Figma design.
-Chart should be clickable (click and show value where you clicked) and value in USD should change to reflect the selected point in the chart
-If hovering finger in chart the value should change
-Current account balance should live in state
+```bash
+# clone from github repository
+$ cd crowdform-takehome
 
-Send Money
+# Install the dependencies
+$ yarn
 
-Needs to be pixel perfect to Figma design
-After submission a modal or alert could appear confirming money sent and value should be subtracted from current account balance
+# Run the application on ios
+$ yarn ios
 
-Figma File:
+# Run the application on ios device
 
-https://www.figma.com/file/k5tyeXoGYIyJF15Y5eJX3M/Crowdform---React-Native-Challenge-2024?type=design&node-id=1%3A2&mode=dev
+## Download[expo](https://apps.apple.com/br/app/expo-go/id982107779) on your ios device.
+## Scan the qrcode returned by expo in your expo app.
+```
 
-How to submit
-To complete this take-home project, please follow these instructions:
+### 📱 Utility commands
 
-Create a personal repository on Github
-Push the React Native project to this repository
-As you work on the project, make frequent commits that explain your development process. For example, if you are adding a new feature, your commit message should describe the feature that you are adding.
-Make sure to follow semantic commit messages to structure your commits in a clear and consistent way.
-Once you have completed the project, make sure to submit the link to the repository for review.
-This way, the reviewers can see your development process and understand the choices you made during the project.
+```bash
+# We check lint and typescript before each commit using the following commands
+
+# check typescript
+$ test:tsc
+
+# check lint
+$ test:eslint
+
+# To check unit tests run
+$ test:unit
+```
+
+### 🛠 Techs
+
+The following tools were used in building the project:
+
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Commitzen](https://github.com/commitizen/cz-cli)
+- [Commitlint](https://github.com/conventional-changelog/commitlint)
+- [Lefthook](https://github.com/evilmartians/lefthook)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-native-testing-library/intro)
+- [Tamagui](https://tamagui.dev/)
+
+### Author
+
+---
+
+<a href="https://github.com/w1ll-dev">
+   <img style="border-radius: 50%; margin: 20px" src="https://github.com/w1ll-dev.png" width="100px;" alt=""/>
+   <br />
+   <p><b>🚀 Will Gomes</b></p>
+</a>
+
+Made with ❤️ by Will Gomes 👋🏽 Contact me!
+
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/will-marcio/)

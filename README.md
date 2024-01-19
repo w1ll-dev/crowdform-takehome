@@ -2,7 +2,7 @@
 
 ## Demo
 
-🎥 [You can see an example video of its use here, remember to put the video in high resolution 😉.](https://youtu.be/lH-2Ff8y8xc)
+🎥 [You can see an example video of its use here, remember to put the video in high resolution 😉.](https://youtu.be/R7jdTD604Zc?si=7TMxXsiNfF-YgYMm)
 
 ## Description
 

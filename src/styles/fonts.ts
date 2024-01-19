@@ -15,7 +15,7 @@ const poppinsMedium = createFont({
   size: {
     1: 12,
     2: 14,
-    3: 16,
+    "button.primary": 16,
   },
 });
 

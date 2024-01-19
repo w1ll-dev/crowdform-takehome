@@ -2,7 +2,7 @@ import { ScreenContainer } from "@atoms/ScreenContainer";
 import { Caption2, Title } from "@atoms/Typography";
 import { Image } from "@molecules/Image";
 import { LoginForm } from "@organisms/forms";
-import { Stack, YStack } from "tamagui";
+import { Square, Stack, YStack } from "tamagui";
 import { texts } from "./texts";
 
 const LoginScreen = () => {
@@ -25,6 +25,7 @@ const LoginScreen = () => {
         <Stack alignItems="center" marginTop={47}>
           <Image image="lock-circle" />
         </Stack>
+        <Square height={"$margin.xl"} />
         <LoginForm />
       </YStack>
     </ScreenContainer>

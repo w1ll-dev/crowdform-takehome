@@ -3,6 +3,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 type RootStackNavigatorParamList = {
   Login: undefined;
   Register: undefined;
+  Home: undefined;
 };
 
 type RootStackNavigatorRouteName = keyof RootStackNavigatorParamList;

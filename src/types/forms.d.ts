@@ -6,8 +6,6 @@ type LoginFieldValues = {
 type RegisterFieldValues = {
   firstName: string;
   lastName: string;
-  email: string;
-  passwordConfirmation: string;
 } & LoginFieldValues;
 
 type YupSchemaShape<Fields> = {

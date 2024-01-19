@@ -8,7 +8,7 @@ import { Alert } from "react-native";
 import { Square, YStack } from "tamagui";
 import { textValidations, texts, yupLoginSchema } from "./textsAndValidations";
 import { Image } from "@molecules/Image";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { useUserContext } from "@providers/UserContext";
 import { loginTestIDs } from "@constants/testIds";
 
@@ -29,17 +29,23 @@ const LoginForm = () => {
 
   const { errors, isValid } = methods.formState;
 
-  const onSubmit = async (formData: LoginFieldValues) => {
-    if (
-      user?.email !== formData.email ||
-      user?.password !== formData.password
-    ) {
-      Alert.alert(texts.invalidCredentials, texts.pleaseTryAgain);
-      return;
-    }
-
-    navigate("Home");
+  const onSignUpLinkPress = () => {
+    methods.reset();
+    navigate("Register");
   };
+
+  const onSubmit = async (formData: LoginFieldValues) =>
+    useCallback(() => {
+      if (
+        user?.email !== formData.email ||
+        user?.password !== formData.password
+      ) {
+        Alert.alert(texts.invalidCredentials, texts.pleaseTryAgain);
+        return;
+      }
+
+      navigate("Home");
+    }, [formData.email, formData.password]);
 
   return (
     <YStack flex={1} justifyContent="space-between">
@@ -83,7 +89,7 @@ const LoginForm = () => {
         <Square height={"$padding.large"} />
         <Label1 color={"$neutral1"} textAlign="center">
           {`${texts.dontHaveAnAccount} `}
-          <Caption1 onPress={() => navigate("Register")} color={"$primary1"}>
+          <Caption1 onPress={onSignUpLinkPress} color={"$primary1"}>
             {texts.signUp}
           </Caption1>
         </Label1>

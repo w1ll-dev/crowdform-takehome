@@ -24,7 +24,7 @@ const ScreenContainer = ({
 
   return (
     <>
-      <ScrollView backgroundColor={background}>
+      <ScrollView backgroundColor={background} bounces={false}>
         <YStack {...props} width={width} flex={1} backgroundColor={background}>
           <StatusBar style={statusBarStyle} />
           {children}

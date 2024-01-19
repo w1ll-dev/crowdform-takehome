@@ -46,6 +46,11 @@ const RegisterForm = () => {
     ]);
   };
 
+  const onLoginLinkPress = () => {
+    methods.reset();
+    navigate("Login");
+  };
+
   return (
     <YStack flex={1} justifyContent="space-between">
       <FormProvider {...methods}>
@@ -105,7 +110,7 @@ const RegisterForm = () => {
         <Square height={"$padding.large"} />
         <Label1 color={"$neutral1"} textAlign="center">
           {`${texts.alreadyHaveAnAccount} `}
-          <Caption1 onPress={() => navigate("Login")} color={"$primary1"}>
+          <Caption1 onPress={onLoginLinkPress} color={"$primary1"}>
             {texts.logIn}
           </Caption1>
         </Label1>

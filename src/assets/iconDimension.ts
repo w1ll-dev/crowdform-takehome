@@ -11,6 +11,10 @@ const IconDimensions: Record<IconName, MediaDimensions> = {
     width: 18,
     height: 13,
   },
+  check: {
+    width: 16,
+    height: 16,
+  },
 };
 
 export { IconDimensions };
